@@ -1,8 +1,8 @@
 import Ember from 'ember';
-import OAuth2ImplicitGrantCallbackRouteMixin from 'ember-simple-auth/mixins/oauth2-implicit-grant-callback-route-mixin';
+import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
 
 const { Route } = Ember;
 
-export default Route.extend(OAuth2ImplicitGrantCallbackRouteMixin, {
-  authenticator: 'authenticator:oauth2-implicit-grant'
+export default Route.extend(ApplicationRouteMixin, {
+  authenticator: 'authenticator:oauth2'
 });

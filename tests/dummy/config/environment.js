@@ -75,5 +75,11 @@ module.exports = function(environment) {
     // put production settings here
   }
 
+  ENV['ember-simple-auth'] = {
+    base: {
+      store: 'session-store:local-storage'
+    }
+  };
+
   return ENV;
 };
